@@ -1,0 +1,252 @@
+.container {
+    position: relative;
+    width: 100%; /* Imposta la larghezza desiderata */
+    margin: 20px auto; /* Aggiungiamo margine per separare l'immagine dall'header */
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 300px; /* Imposta un'altezza massima desiderata per l'overlay */
+    opacity: 0; /* Impostiamo l'opacità iniziale a 0 per nascondere l'overlay */
+    transition: opacity 0.3s ease; /* Aggiungiamo un effetto di transizione per l'opacità */
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1; /* Al passaggio del mouse, mostreremo l'overlay impostando l'opacità a 1 */
+  }
+  
+  /* Stile di default per le immagini */
+  img {
+    max-width: 100%;
+    height: 500px;
+    display: block;
+  }
+  
+  /* Stile dell'header */
+  header {
+    margin-bottom: 20px;
+
+  }
+
+  .centered-container {
+    text-align: center;
+    max-width: 800px; /* Imposta la larghezza massima del contenuto */
+    margin: 0 auto; /* Centra il div orizzontalmente */
+    padding: 20px; /* Aggiunge spazio interno al contenuto */
+    border: 1px solid #ccc; /* Aggiunge un bordo */
+    background-color: #f9f9f9; /* Aggiunge un colore di sfondo */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge una leggera ombra */
+    margin-top: 50px;
+  }
+  
+  .centered-container h1 {
+    margin-bottom: 10px; /* Aggiunge spazio sotto l'intestazione */
+  }
+  
+  .centered-container p {
+    margin-bottom: 15px; /* Aggiunge spazio sotto i paragrafi */
+  }
+  
+  /*stelle */
+  .stelle {
+    color: gold;
+}
+
+#schill{
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Effetto di ingrandimento al passaggio del mouse sulle abilità */
+.skill-item {
+  transition: transform 0.2s; /* Transizione fluida per l'effetto */
+}
+
+.skill-item:hover {
+  transform: scale(1.05); /* Ingrandisce il div al passaggio del mouse */
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+    
+}
+
+.skill-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.skill-name {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.skill-rating {
+    display: flex;
+    align-items: center;
+}
+
+.skill-rating .stelle {
+    color: gold;
+    margin-left: 5px;
+}
+.skill-rating {
+    display: flex;
+    align-items: center;
+}
+
+.skill-rating .stelle {
+    color: gold;
+    margin-left: 5px;
+}
+
+.stelle-empty {
+    color: lightgrey;
+    margin-left: 5px;
+}
+
+.portfolio {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.portfolio h1 {
+  margin-bottom: 20px;
+}
+
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Aggiungi un po' di spazio tra le immagini */
+}
+
+.portfolio-item {
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+/* Aggiungi questo stile al tuo foglio di stile CSS */
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+  width: 300px; /* Imposta la larghezza desiderata per le immagini del portfolio */
+  margin-bottom: 20px; /* Aggiunge spazio tra le immagini */
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+
+.description {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 0.3s;
+}
+
+.portfolio-item:hover .description {
+  opacity: 1;
+}
+
+/* styles.css */
+#footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.contact-info img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 14px;
+}
+/* Aggiungi questo CSS nel tuo file di stile o nella sezione <style> del tuo HTML */
+
+.contact-button {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}
+
+.contact-button img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.contact-button p {
+  font-size: 14px;
+  margin: 0;
+}
+/* Aggiungi questo CSS nel tuo file di stile o nella sezione <style> del tuo HTML */
+
+/* Aggiungi questo stile al tuo foglio di stile CSS */
+.skill-item.animate {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
