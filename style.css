@@ -251,25 +251,27 @@ h1 {
   transition: transform 0.3s ease;
 }
 
-/* Stili per schermi piccoli */
+/*/* Stili per schermi piccoli */
 @media only screen and (max-width: 425px) {
   #fotosfondo {
     display: none;
   }
   #overlay2 {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 /* Stili per schermi medi (tablet in modalità orizzontale) */
 @media only screen and (max-width: 768px) {
   #fotosfondo {
+    display: none;
+  }
+  #overlay2 {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  #overlay2 {
-    display: block;
   }
 }
 
