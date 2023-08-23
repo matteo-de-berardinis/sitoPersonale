@@ -251,17 +251,29 @@ h1 {
   transition: transform 0.3s ease;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Stili per schermi piccoli */
 @media only screen and (max-width: 425px) {
+  #fotosfondo {
+    display: none;
+  }
+  #overlay2 {
+    display: block;
+  }
+}
 
-  #fotosfondo{
-    display: none;
+/* Stili per schermi medi (tablet in modalità orizzontale) */
+@media only screen and (max-width: 768px) {
+  #fotosfondo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  #overlay2 {
+    display: block;
   }
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (max-width: 768px) {
-  #fotosfondo{
-    display: none;
-  }
-  
-  }
+}
+
+/* Stili di default per gli elementi */
+#overlay2 {
+  display: none;
+}
